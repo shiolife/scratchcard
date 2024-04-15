@@ -9,7 +9,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="google" content="notranslate">
-    <title>邮电一丝</title>
+    <title>有点意思的刮刮乐
+    </title>
     <script type="text/javascript">var version = '1.9.4';</script>
     <script type="text/javascript" src="polyfill/polyfill.js?1.9.4"></script>
     <script type="text/javascript" src="polyfill/Blob.js?1.9.4"></script>
@@ -263,7 +264,7 @@
           }
 
           function basicLoad(location) {
-            var possible = ['koalas'];
+            var possible = ['koalas', 'koalas1', 'koalas2', 'koalas3'];
             var file = 'img/' + possible[Math.floor(Math.random() * possible.length)] + '.jpg'
             return {
               file: file,
@@ -318,11 +319,10 @@
               // Case 2c
               file = param.images[Math.floor(Math.random() * param.images.length)];
               return {
-                file: https://s1.imagehub.cc/images/2024/04/03/661a5478695ecda0f04b67a395ae536a.jpeg,
-                shownFile: 'https://s1.imagehub.cc/images/2024/04/03/661a5478695ecda0f04b67a395ae536a.jpeg',
-                
-                background: '#000000',
-                hideNote: false
+                file: file,
+                shownFile: file,
+                background: param.background,
+                hideNote: param.hideNote
               };
             }
 
