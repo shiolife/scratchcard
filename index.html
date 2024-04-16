@@ -28,16 +28,21 @@
           Your browser does not support JavaScript or it is disabled.<br>
           JavaScript is needed to view this site.
         </noscript>
-        <div id="dots"></div>
+        <div id="dots">
+          
+
+        </div>
         <div id="next" style="display: none">
           <div class="msg">
-            Awesome stuff! Now make your own and share the link.<br>
-            Paste an image URL bellow and press enter.
+            感谢游玩，刷新更换img
+            <!-- Awesome stuff! Now make your own and share the link.<br>
+            Paste an image URL bellow and press enter. -->
           </div>
           <input placeholder="http://imgur.com/your_favourite_image.jpg"/>
         </div>
       </div>
     </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="https://music.163.com/outchain/player?type=0&id=8559564196&auto=1&height=90"></iframe>
     <div id="footer">
       <!-- Made with <span id="love">love</span> by
       <a href="http://vadim.ogievetsky.com">Vadim Ogievetsky</a>
@@ -46,7 +51,9 @@
       &nbsp; / &nbsp;
       Powered by
       <a href="http://d3js.org/">D3</a> -->
-      <a href="https://shiroka.top">blog</a>
+      
+      <span>图片随机获取，欢迎投稿</span> &nbsp;
+      <a href="https://shiroka.top">myblog</a>
     </div>
 
     <script type="text/javascript">
@@ -352,7 +359,7 @@
           function onEvent(what, value) {
             track(what, value);
 
-            if (what === 'LayerClear' && value == 0) {
+            if (what === 'LayerClear' && value == 0) { 
               d3.select('#next')
                 .style('display', null)
                 .select('input')
